@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TUI France Website Clone
 
-## Getting Started
+![TUI Banner](public/tui-banner.png)
 
-First, run the development server:
+A modern recreation of the TUI France website, focusing on eco-responsible travel and user experience.
+
+## 🌟 Project Overview
+
+This project is a Next.js implementation of TUI France's website, featuring:
+- Responsive design
+- Interactive travel cards
+- Dynamic filtering system
+- Newsletter subscription
+- Social media integration
+
+## 🎯 Demo
+
+### Video Presentation
+[![Watch the video](public/video-thumbnail.png)](https://youtu.be/your-video-link)
+
+### Design Resources
+- [Figma Design](https://www.figma.com/design/0aSfPALzdnlvbTV33LVWTu/Nouvelle-Frontiere?node-id=0-1&t=gAk6NiH2rvXB3vTo-1)
+- [Canva Presentation](https://www.figma.com/design/0aSfPALzdnlvbTV33LVWTu/Nouvelle-Frontiere?node-id=0-1&t=gAk6NiH2rvXB3vTo-1)
+
+## 🚀 Features
+
+- **Interactive Travel Cards**
+  - Image carousel
+  - Eco-responsible indicators
+  - Price and availability display
+  
+- **Advanced Filtering**
+  - Price range
+  - Duration
+  - Sustainability options
+  - Destination search
+  - Departure city selection
+
+- **Responsive Footer**
+  - Newsletter subscription
+  - Social media links
+  - Comprehensive site map
+  - Payment methods display
+
+## 💻 Tech Stack
+
+- Next.js 13+
+- TypeScript
+- CSS Modules
+- React Icons
+- Next/Image optimization
+
+## 🛠️ Installation
 
 ```bash
+# Clone the repository
+git clone git@github.com:Jayzheh/NouvelleFrontiere.git
+
+# Navigate to project directory
+cd nouvellefrontiere
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
