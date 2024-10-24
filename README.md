@@ -16,7 +16,7 @@ This project is a Next.js implementation of TUI France's website, featuring:
 ## 🎯 Demo
 
 ### Video Presentation
-[![Watch the video](public/video-thumbnail.png)](https://youtu.be/ngnzMfQqOEY)
+[![Watch our chatbot in action](public/video-thumbnail.png)](https://youtu.be/ngnzMfQqOEY)
 
 ### Design Resources
 - [Figma Design](https://www.figma.com/design/0aSfPALzdnlvbTV33LVWTu/Nouvelle-Frontiere?node-id=0-1&t=gAk6NiH2rvXB3vTo-1)
