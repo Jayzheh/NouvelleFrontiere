@@ -1,0 +1,167 @@
+/* /Users/danlynmedou/Desktop/NouvelleFrontiere/nouvellefrontiere/src/app/components/Footer.module.css */
+
+.footer {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .newsletterSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .newsletterForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .formInputs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .emailInput, .citySelect {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 200px;
+  }
+  
+  .subscribeButton {
+    background-color: #0a6eb4;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .subscribeButton:hover {
+    background-color: #085a94;
+  }
+  
+  .socialLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    color: #0a6eb4;
+  }
+  
+  .socialIcons > * {
+    cursor: pointer;
+  }
+  
+  .linksSection {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding: 40px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .linkColumn h4 {
+    color: #0a6eb4;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  .linkColumn ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .linkColumn li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .linkColumn li:hover {
+    color: #0a6eb4;
+  }
+  
+  .paymentSection {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .paymentMethods {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .bottomSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .tuiLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .countrySelect {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1024px) {
+    .linksSection {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .newsletterSection {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+    
+    .socialLinks {
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .linksSection {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .formInputs {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .linksSection {
+      grid-template-columns: 1fr;
+    }
+    
+    .bottomSection {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }

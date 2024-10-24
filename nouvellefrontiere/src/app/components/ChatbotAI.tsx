@@ -32,7 +32,7 @@ const ChatbotAI = () => {
     setIsOpen(true);
     const initialMessage: Message = {
       id: Date.now(),
-      text: "Bonjour! Je suis votre assistant voyage éco-responsable TUI. Comment puis-je vous aider à planifier un voyage durable aujourd'hui?",
+      text: "Bonjour! Je suis votre assistant de voyage TUI. Quel destination avez vous en tete?",
       sender: 'bot'
     };
     setMessages([initialMessage]);
@@ -97,15 +97,15 @@ const ChatbotAI = () => {
       {!isOpen ? (
         <div className={styles.closedContainer}>
           <h2 className={styles.title}>
-            Voyager avec le sourire avec<br />
-            notre nouvelle IA éco-responsable
+            Voyager avec
+            notre IA
           </h2>
           <button 
             className={styles.openButton} 
             onClick={handleOpen}
           >
             <FaLeaf className={styles.leafIcon} />
-            Commencer par poser une question ...
+            Poser une question ...
           </button>
         </div>
       ) : (
@@ -113,7 +113,7 @@ const ChatbotAI = () => {
           <div className={styles.chatHeader}>
             <div className={styles.headerContent}>
               <FaLeaf className={styles.headerIcon} />
-              <h3>Assistant Voyage Éco-responsable</h3>
+              <h3>TUI, votre Agent de voyage 👩🏻‍🦰</h3>
             </div>
             <button 
               className={styles.closeButton} 
@@ -164,7 +164,7 @@ const ChatbotAI = () => {
               type="text"
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
-              placeholder="Posez votre question sur le voyage durable..."
+              placeholder="Vers quel destination..."
               className={styles.input}
               disabled={isLoading}
             />
