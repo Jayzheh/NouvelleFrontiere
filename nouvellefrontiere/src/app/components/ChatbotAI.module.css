@@ -1,33 +1,207 @@
 /* components/ChatbotAI.module.css */
+
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-    background-color: #f5f5f5;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+  }
+  
+  .closedContainer {
     text-align: center;
+    max-width: 400px;
   }
   
   .title {
-    font-size: 32px;
-    color: #4a7c2a;
-    margin-bottom: 30px;
-    font-weight: bold;
-    line-height: 1.2;
+    font-size: 1.5rem;
+    color: #006400;
+    margin-bottom: 1rem;
   }
   
-  .button {
-    background-color: #4a7c2a;
+  .openButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    background-color: #006400;
     color: white;
     border: none;
-    padding: 15px 30px;
-    font-size: 18px;
     border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 1rem;
   }
   
-  .button:hover {
-    background-color: #3a6121;
+  .openButton:hover {
+    background-color: #005000;
+    transform: translateY(-2px);
+  }
+  
+  .leafIcon {
+    font-size: 1.2rem;
+  }
+  
+  .chatWindow {
+    width: 380px;
+    height: 600px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chatHeader {
+    padding: 1rem;
+    background: #006400;
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .headerContent {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .headerIcon {
+    font-size: 1.2rem;
+  }
+  
+  .closeButton {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+  }
+  
+  .closeButton:hover {
+    transform: scale(1.1);
+  }
+  
+  .messagesContainer {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .message {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    max-width: 80%;
+  }
+  
+  .userMessage {
+    margin-left: auto;
+    flex-direction: row-reverse;
+  }
+  
+  .botMessage {
+    margin-right: auto;
+  }
+  
+  .messageContent {
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .userMessage .messageContent {
+    background: #006400;
+    color: white;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .botMessage .messageContent {
+    background: #f0f0f0;
+    color: #333;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .botIcon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .loadingMessage {
+    align-self: flex-start;
+    padding: 1rem;
+  }
+  
+  .typingDots {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .typingDots span {
+    width: 8px;
+    height: 8px;
+    background: #006400;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out;
+  }
+  
+  .typingDots span:nth-child(1) { animation-delay: -0.32s; }
+  .typingDots span:nth-child(2) { animation-delay: -0.16s; }
+  
+  @keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); }
+  }
+  
+  .inputForm {
+    padding: 1rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .input {
+    flex-grow: 1;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #006400;
+  }
+  
+  .sendButton {
+    background: #006400;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .sendButton:hover:not(:disabled) {
+    background: #005000;
+  }
+  
+  .sendButton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
   }
