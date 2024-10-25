@@ -20,7 +20,7 @@ This project is a Next.js implementation of TUI France's website, featuring:
 
 ### Design Resources
 - [Figma Design](https://www.figma.com/design/0aSfPALzdnlvbTV33LVWTu/Nouvelle-Frontiere?node-id=0-1&t=gAk6NiH2rvXB3vTo-1)
-- [Canva Presentation](https://www.figma.com/design/0aSfPALzdnlvbTV33LVWTu/Nouvelle-Frontiere?node-id=0-1&t=gAk6NiH2rvXB3vTo-1)
+- [Canva Presentation](https://www.canva.com/design/DAGUNY4NVxg/uMQ22ZeP8B2Yn3ggVyZEMg/edit?utm_content=DAGUNY4NVxg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## 🚀 Features
 
